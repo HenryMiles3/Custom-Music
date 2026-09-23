@@ -1,0 +1,11 @@
+name: CustomMusic
+description: $description
+prefix: [ CustomDisk ]
+version: '${version}'
+
+main: io.github.henrymiles3.customMusic.CustomMusic
+api-version: '26.2'
+load: POSTWORLD
+
+authors: [ NightmareYT1 ]
+website: papermc.io
