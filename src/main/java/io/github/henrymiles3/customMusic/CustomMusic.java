@@ -1,7 +1,9 @@
 package io.github.henrymiles3.customMusic;
 
+import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 
+import io.github.henrymiles3.customMusic.commands.PayCommand;
 import io.github.henrymiles3.customMusic.economy.EconomyLogger;
 import io.github.henrymiles3.customMusic.economy.EconomyManager;
 
@@ -15,6 +17,9 @@ public final class CustomMusic extends JavaPlugin {
     public void onEnable() {
         // Plugin startup logic
         getLogger().info("Starting plugin...");
+
+        //Command registration
+        this.getCommand("pay").setExecutor(new PayCommand(economnyManager));
     }
 
     @Override
